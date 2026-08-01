@@ -7,17 +7,8 @@ jobs:
       - name: check out the repo first
         uses: actions/checkout@v7
 
-      - name: Install cowsay
-        run: sudo apt install cowsay -y
-
-      - name: EXECUTE COWSAY CMD
-        run: cowsay -f dragon "Run otherwise i am gonna burn you by my fire cause i'm dragon isn't it" >>  dragon.txt
-
-      - name: Test File Exists or Not
-        run: grep -i "dragon" dragon.txt
-
-      - name: Read File
-        run: cat dragon.txt
-
       - name: List Repo Files
         run: ls -ltra
+
+      - name: Executing Shell Script
+        run: ./ascii-script.sh
