@@ -17,3 +17,6 @@ jobs:
       - name: second job to do
         run: |
           echo "It is time to do experiment"
+      - name: GENERATE ASCII CHARACTER
+        run: |
+          cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
