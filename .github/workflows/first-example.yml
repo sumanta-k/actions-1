@@ -1,0 +1,18 @@
+name: My first workflow # telling what would be the job NAME , it will be shown under action TAB
+on: [push] # triggering on which event this job going to run
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      # step: 1
+      - name: Welcome Message
+        run: echo "MY FIRST GITHUB ACTIONS JOB"
+
+        # step: 2
+      - name: List Files Which are available in this repository # you can write multiple steps
+        run: ls -ltr
+
+        # step 3:
+      - name: Read File
+        run: cat README.md
