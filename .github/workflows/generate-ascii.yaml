@@ -20,3 +20,12 @@ jobs:
 
       - name: Test File Exists or Not
         run: grep -i "dragon" dragon.txt
+
+  deploy_job_3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read File
+        run: cat dragon.txt
+
+      - name: Deploy
+        run: echo "deploying..."
