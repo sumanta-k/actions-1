@@ -12,3 +12,11 @@ jobs:
 
       - name: Sleep for 30s
         run: sleep 30
+  test_job_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for 10s
+        run: sleep 10
+
+      - name: Test File Exists or Not
+        run: grep -i "dragon" dragon.txt
