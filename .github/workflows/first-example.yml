@@ -8,13 +8,9 @@ jobs:
       # step: 1
       - name: Checkout my REPO first
         uses: actions/checkout@v4
-      - name: Welcome Message
-        run: echo "MY FIRST GITHUB ACTIONS JOB"
 
-        # step: 2
-      - name: List Files Which are available in this repository # you can write multiple steps
-        run: ls -ltr
-
-        # step 3:
-      - name: Read File
-        run: cat README.md
+      - name: List Out All The Files
+        run: |
+          echo "MY FIRST GITHUB ACTIONS JOB"
+          ls -ltra
+          cat README.md
