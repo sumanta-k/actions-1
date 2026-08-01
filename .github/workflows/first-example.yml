@@ -14,3 +14,6 @@ jobs:
           echo "MY FIRST GITHUB ACTIONS JOB"
           ls -ltra
           cat README.md
+      - name: second job to do
+        run: |
+          echo "It is time to do experiment"
